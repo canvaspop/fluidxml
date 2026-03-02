@@ -14,7 +14,7 @@ interface FluidInterface
         public function save($file, $strip = false);
         public function query(...$query);
         public function __invoke(...$query);
-        public function times($times, callable $fn = null);
+        public function times($times, ?callable $fn = null);
         public function each(callable $fn);
         public function map(callable $fn);
         public function filter(callable $fn);
